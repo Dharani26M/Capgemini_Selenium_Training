@@ -1,0 +1,29 @@
+package selenium_webdriver_interrogation_method;
+
+import java.time.Duration;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class WindowHandle_Method {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		WebDriver driver=new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(16));
+		driver.get("https://demowebshop.tricentis.com/");
+		System.out.println(driver.getWindowHandle());
+		driver.navigate().refresh();
+		driver.get("https://demowebshop.tricentis.com/");
+		System.out.println(driver.getWindowHandle());
+		driver.quit();
+		WebDriver driver1=new ChromeDriver();
+		driver1.manage().window().maximize();
+		driver1.manage().timeouts().implicitlyWait(Duration.ofSeconds(16));
+		driver1.get("https://demowebshop.tricentis.com/");
+		System.out.println(driver1.getWindowHandle());
+
+	}
+
+}

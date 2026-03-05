@@ -1,0 +1,32 @@
+package selenium_Training_pratice;
+import java.util.Iterator;
+import java.util.Set;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class LinkTextMethod {
+
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
+		WebDriver Driver =new ChromeDriver();
+		Driver.get("https://demowebshop.tricentis.com");
+		Thread.sleep(2000);
+		Driver.findElement(By.linkText("Facebook")).click();
+		Set<String> win=Driver.getWindowHandles();
+		Iterator<String> it=win.iterator();
+		String parentid=it.next();
+		String childid=it.next();
+		Driver.switchTo().window(childid);	
+		System.out.println(Driver.getCurrentUrl());
+//		WebDriver Driver =new ChromeDriver();
+//		Driver.get("https://google.com");
+//		Thread.sleep(2000);
+//		Driver.findElement(By.linkText("Gmail")).click();
+		
+		
+
+	}
+
+}

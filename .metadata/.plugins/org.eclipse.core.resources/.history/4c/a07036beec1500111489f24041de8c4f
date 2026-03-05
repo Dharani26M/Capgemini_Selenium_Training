@@ -1,0 +1,10 @@
+package selenium_navigation_API_execution;
+
+public class Navigation_API_TestCase_01 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

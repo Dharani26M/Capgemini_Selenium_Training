@@ -1,0 +1,10 @@
+package selenium_webdriver_interrogation_method;
+
+public class WindowHandles_Method {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

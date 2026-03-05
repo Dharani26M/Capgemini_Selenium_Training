@@ -1,0 +1,61 @@
+package selenium_webelement_interrogation_method;
+
+import java.time.Duration;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.locators.RelativeLocator;
+
+public class WebElement_Is_Method {
+
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
+		WebDriver driver =new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(18));
+		driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
+		WebElement name= driver.findElement(By.xpath("//input[starts-with(@name,'username')]"));
+		name.sendKeys("Admin");
+		driver.findElement(RelativeLocator.with(By.tagName("input")).below(name)).sendKeys("admin123");
+		driver.findElement(By.xpath("//html//body//div//div//button")).click();
+		String second_url=driver.getCurrentUrl();
+		driver.findElement(By.xpath("(//img[@alt='profile picture'])[1]")).click();
+		driver.findElement(By.xpath("(//a[@class=\"oxd-userdropdown-link\"])[3]")).click();
+		String start_url=driver.getCurrentUrl();
+		Thread.sleep(000);
+		driver.navigate().back();
+		String second_actual=driver.getCurrentUrl();
+		if(second_actual.equals(second_url)) {
+			System.out.println(" back is verified");	
+		}
+		driver.navigate().forward();
+		String for_url=driver.getCurrentUrl();
+		if(start_url.equals(for_url)) {
+			System.out.println(" forward is verified");
+		}
+		driver.navigate().refresh();
+		String ref_url=driver.getCurrentUrl();
+		if(for_url.equals(ref_url)) {
+			System.out.println(" refresh is verified");
+		}
+//		driver.close();
+		
+		
+		
+		
+		
+//		driver.get("https://demoapps.qspiders.com/ui?scenario=1");
+//		System.out.println(driver.findElement(By.xpath("//button[.='Register']")).isDisplayed());
+//		System.out.println(driver.findElement(By.xpath("//button[.='Register']")).isEnabled());
+//		driver.get("https://demoapps.qspiders.com/ui/duplicate?sublist=0&scenario=1");
+//		System.out.println(driver.findElement(By.xpath("(//input[@class=\"mr-2 h-5 w-5\"])[1]")).isSelected());
+//		driver.findElement(By.xpath("(//input[@class=\"mr-2 h-5 w-5\"])[1]")).click();
+//		System.out.println(driver.findElement(By.xpath("(//input[@class=\"mr-2 h-5 w-5\"])[1]")).isSelected());		
+		
+		
+
+	}
+
+}

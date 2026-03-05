@@ -1,0 +1,26 @@
+package selenium_webelement_interrogation_method;
+
+import java.time.Duration;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class WebElement_GetSize {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		WebDriver driver =new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(18));
+		driver.get("https://www.selenium.dev/");
+		WebElement search=driver.findElement(By.xpath("//div[@class='col-lg-4 mb-5 mb-lg-0 text-center bg-transparent'][3]"));
+		System.out.println(search.getSize());
+		System.out.println(search.getSize().height);
+		System.out.println(search.getSize().width);
+		
+		
+	}
+
+}

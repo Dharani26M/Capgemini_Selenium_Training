@@ -1,0 +1,47 @@
+package selenium_navigation_API_execution;
+
+import java.time.Duration;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.locators.RelativeLocator;
+
+public class Navigation_TestCase_02 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		WebDriver driver =new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(18));
+		driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
+		WebElement name= driver.findElement(By.xpath("//input[starts-with(@name,'username')]"));
+		name.sendKeys("Admin");
+		driver.findElement(RelativeLocator.with(By.tagName("input")).below(name)).sendKeys("admin123");
+		driver.findElement(By.xpath("//html//body//div//div//button")).click();
+		String second_url=driver.getCurrentUrl();
+		driver.findElement(By.xpath("(//img[@alt='profile picture'])[1]")).click();
+		driver.findElement(By.xpath("(//a[@class=\"oxd-userdropdown-link\"])[3]")).click();
+		String start_url=driver.getCurrentUrl();
+		driver.navigate().back();
+		String second_actual=driver.getCurrentUrl();
+		if(second_actual.equals(second_url)) {
+			System.out.println(" back is verified");	
+		}
+		driver.navigate().forward();
+		String for_url=driver.getCurrentUrl();
+		if(start_url.equals(for_url)) {
+			System.out.println(" forward is verified");
+		}
+		driver.navigate().refresh();
+		String ref_url=driver.getCurrentUrl();
+		if(for_url.equals(ref_url)) {
+			System.out.println(" refresh is verified");
+		}
+		driver.quit();
+
+	}
+	
+
+}

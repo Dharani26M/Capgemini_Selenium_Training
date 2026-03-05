@@ -1,0 +1,29 @@
+package selenium_webelement_interrogation_method;
+
+import java.time.Duration;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class WebElement_Rectangle {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		WebDriver driver =new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(18));
+		driver.get("https://demowebshop.tricentis.com/");
+		System.out.println(driver.findElement(By.id("small-searchterms")).getRect().getHeight()); 
+		System.out.println(driver.findElement(By.id("small-searchterms")).getRect().getWidth()); 
+		System.out.println(driver.findElement(By.id("small-searchterms")).getRect().getX()); 
+		System.out.println(driver.findElement(By.id("small-searchterms")).getRect().getY());  
+		System.out.println(driver.findElement(By.id("small-searchterms")).getRect().getPoint().x); 
+		System.out.println(driver.findElement(By.id("small-searchterms")).getRect().getPoint().y); 
+		System.out.println(driver.findElement(By.id("small-searchterms")).getRect().getDimension().height); 
+		System.out.println(driver.findElement(By.id("small-searchterms")).getRect().getDimension().width); 
+
+		
+	}
+
+}

@@ -1,0 +1,10 @@
+package selenium_Training_pratice;
+
+public class List_webElement {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,10 @@
+package selenium_fileupload_popups;
+
+public class FileUpload_PopUps_TestCase_01 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="MavenProjectWizardLocationPage">
+		<list key="location">
+			<item value="C:\Users\itsdh\capg\selenium_select_class\src\test\java\selenium_select_methods\Select_TestCase_01.java"/>
+			<item value="C:\Users\itsdh\capg\selenium_Interrogation_API\src\test\java\selenium_webelement_interrogation_method\WebElement_GetSize.java"/>
+			<item value="C:\Users\itsdh\capg\selenium_navigation_API\src\test\java\selenium_navigation_API_execution\NavigateUsingMethods.java"/>
+			<item value="C:\Users\itsdh\capg\selenium_webdriver\pom.xml"/>
+			<item value="C:\Users\itsdh\capg\Capgemini_selenium_Training\src\test\java\webdriver_intro\launching_Testing.java"/>
+			<item value="C:\Users\itsdh\capg\Capgemini_selenium_Training"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArchetypePage">
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="Maven2ProjectWizardArchifactPage">
+		<list key="package">
+		</list>
+		<list key="groupId">
+		</list>
+		<list key="artifactId">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArtifactPage">
+		<list key="groupId">
+			<item value="com.capgemini.selenium.training"/>
+			<item value="com.Capgemini.Training"/>
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+			<item value="selenium_popups"/>
+			<item value="selenium_select_class"/>
+			<item value="selenium_Interrogation_API"/>
+			<item value="selenium_WebElement_API"/>
+			<item value="selenium_navigation_API"/>
+			<item value="selenium_webdriver"/>
+			<item value="selenium_relative_locators"/>
+			<item value="selenium_locators"/>
+			<item value="selenium_Training"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+</section>

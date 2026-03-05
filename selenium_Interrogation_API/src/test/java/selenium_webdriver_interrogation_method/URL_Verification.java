@@ -1,0 +1,31 @@
+package selenium_webdriver_interrogation_method;
+
+import java.time.Duration;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class URL_Verification {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		WebDriver driver=new ChromeDriver();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(16));
+		try {
+		driver.get("https://demowebshop.tricentis.com/");
+		driver.manage().window().maximize();
+		String Expected_Url="https://demowebshop.tricentis.com/";
+		String Actual_Url=driver.getCurrentUrl();
+		if(Actual_Url.equals(Expected_Url)) {
+			System.out.println("Navigation is successfull");
+		}
+		else {
+            throw new Exception();
+        }
+		}catch(Exception e) {
+			System.out.println("Navigation is failed");
+		}
+
+	}
+
+}

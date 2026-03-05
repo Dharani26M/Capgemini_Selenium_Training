@@ -1,0 +1,19 @@
+/**
+ * 
+ */
+package selenium_webelement_interrogation_method;
+
+/**
+ * 
+ */
+public class WebElement_Attribute {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

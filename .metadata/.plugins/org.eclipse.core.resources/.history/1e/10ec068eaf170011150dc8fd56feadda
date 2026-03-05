@@ -1,0 +1,34 @@
+package selenium_popups_methods;
+
+import java.time.Duration;
+import java.util.Iterator;
+import java.util.Set;
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Selenium_Popups_Learning {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		WebDriver driver =new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(18));
+		driver.get("https:Amazon.in");
+		driver.findElement(By.xpath("//input[@id=\"twotabsearchtextbox\"]")).sendKeys("Laptop",Keys.ENTER);
+		
+		driver.findElement(By.xpath("//div[@data-index='3']//*//img")).click();
+		System.out.println(driver.getWindowHandle());
+		Set<String> all=driver.getWindowHandles();
+		Iterator li=all.iterator();
+		li.next();
+		driver.switchTo().window(li.next().toString());
+		System.out.println(driver.getWindowHandle());
+		
+//		driver.quit();
+		
+
+	}
+
+}

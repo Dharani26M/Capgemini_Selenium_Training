@@ -1,0 +1,52 @@
+package selenium_Training_pratice;
+import java.util.Iterator;
+import java.util.Set;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class LinkTextMethod {
+
+	public static void main(String[] args) throws InterruptedException {
+	
+		WebDriver Driver =new ChromeDriver();
+//		Driver.get("https://demowebshop.tricentis.com");
+//		Thread.sleep(2000);
+//		Driver.findElement(By.linkText("Facebook")).click();
+//		Thread.sleep(2000);
+//		Set<String> win=Driver.getWindowHandles();
+//		Iterator<String> it=win.iterator();
+//		String parentid=it.next();
+//		String childid=it.next();
+//		Driver.switchTo().window(childid);	
+//		Driver.close();
+	
+
+//		Driver.get("https://google.com");
+//		Thread.sleep(2000);
+//		Driver.findElement(By.linkText("Gmail")).click();
+		
+
+//		Driver.get("https://demowebshop.tricentis.com");
+//		Thread.sleep(2000);
+////		Driver.findElement(By.linkText("Computers\r\n"
+////				+ "        ")).click();
+//		Driver.findElement(By.partialLinkText("Computers")).click();
+		
+		Driver.get("https://www.flipkart.com/");
+		Thread.sleep(2000);
+//		Driver.findElement(By.className("b3wTlE")).click();
+//		Thread.sleep(2000);
+//		Driver.findElement(By.partialLinkText("Login")).click();
+		
+//		or
+		
+		Driver.findElement(By.xpath("//span[text()='✕']")).click();
+		Thread.sleep(2000);
+		Driver.findElement(By.partialLinkText("Login")).click();
+		
+
+	}
+
+}

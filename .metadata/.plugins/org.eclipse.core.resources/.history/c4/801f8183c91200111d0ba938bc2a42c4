@@ -1,0 +1,27 @@
+package selenium_Training_pratice;
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class List_webElement {
+
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
+		WebDriver driver=new ChromeDriver();
+		driver.get("https:google.com");
+		Thread.sleep(2000);
+		List<WebElement> All_links=driver.findElements(By.tagName("a"));
+		for(WebElement Links:All_links) {
+			String above=Links.getText();
+			if(above.equals("About")) {
+				Links.click();
+				break;
+			}
+		}
+
+	}
+
+}

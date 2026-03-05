@@ -1,0 +1,60 @@
+package selenium_Training_pratice;
+
+import java.util.concurrent.ConcurrentHashMap.KeySetView;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class Quit_click {
+
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
+//		WebDriver driver =new ChromeDriver();
+//		driver.get("https://www.google.com");
+//		Thread.sleep(2000);
+////		driver.findElement(By.linkText("Admission Information")).click();
+//		WebElement search=driver.findElement(By.id("APjFqb"));
+//		search.sendKeys("Selenium",Keys.ENTER);
+		
+//		WebDriver driver1=new FirefoxDriver();
+//		driver1.get("https://youtube.com");
+//		driver1.findElement(By.name("search_query")).sendKeys("Troll op Bgmi",Keys.ENTER);
+//		Thread.sleep(3000);
+//		driver1.findElements(By.id("video-title")).get(0).click();
+//		Thread.sleep(00);
+//		driver1.findElement(By.xpath("//button[contains(.,'Share')]")).click();
+		
+//		WebDriver driver =new ChromeDriver();
+//		driver.get("https://www.gmail.com");
+//		Thread.sleep(2000);
+//		driver.findElement(By.xpath("//button[contains(.,'Create account')]")).click();
+		
+//		WebDriver Driver =new ChromeDriver();
+//		Driver.get("https:chatgpt.com");
+//		Thread.sleep(3000);
+//		Driver.findElement(By.id("prompt-textarea")).sendKeys("hello",Keys.ENTER);
+		
+//		WebDriver Driver =new ChromeDriver();
+//		Driver.get("https:amazon.in");
+//		Thread.sleep(2000);
+//		Driver.findElement(By.id("twotabsearchtextbox")).sendKeys("moto g64",Keys.ENTER);
+		
+//		WebDriver Driver =new ChromeDriver();
+//		Driver.get("https://www2.hm.com/en_in/index.html?srsltid=AfmBOooHNx6ZbbZrtt0NCn3QIlnkGD5HT_qj6fa4ZyAPGMw7IoINuL-y");
+//		Thread.sleep(7000);
+//		WebElement tab = Driver.findElement(By.id("men"));
+//        tab.sendKeys(Keys.ENTER);
+		
+		WebDriver Driver =new ChromeDriver();
+		Driver.get("https://www.menfashion.com/?srsltid=AfmBOorFVI86aOjDZ-Tg6_QQQf9x1NU2qD4E7UPSqGSVHDfJrFS-L6od");
+		Thread.sleep(7000);
+		WebElement tab = Driver.findElement(By.id("site-nav-item--1"));
+        tab.sendKeys(Keys.ENTER);
+		
+	}
+
+}

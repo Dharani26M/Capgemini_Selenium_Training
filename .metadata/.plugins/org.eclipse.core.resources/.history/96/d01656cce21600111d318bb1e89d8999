@@ -1,0 +1,25 @@
+package selenium_webelement_interrogation_method;
+
+import java.time.Duration;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class WebElement_Is_Method {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		WebDriver driver =new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(18));
+		driver.get("https://demoapps.qspiders.com/ui?scenario=1");
+		System.out.println(driver.findElement(By.xpath("//button[.='Register']")).isDisplayed());
+		System.out.println(driver.findElement(By.xpath("//button[.='Register']")).isEnabled());
+		driver.get("https://demoapps.qspiders.com/ui/duplicate?sublist=0&scenario=1");
+		System.out.println(driver.findElement(By.xpath("(//input[@class=\"mr-2 h-5 w-5\"])[1]")).isSelected());
+		
+
+	}
+
+}

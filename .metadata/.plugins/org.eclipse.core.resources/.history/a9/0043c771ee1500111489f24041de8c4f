@@ -1,0 +1,32 @@
+package selenium_navigation_API_execution;
+
+import java.time.Duration;
+import java.util.concurrent.ConcurrentHashMap.KeySetView;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Navigation_API_TestCase_01 {
+
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
+		WebDriver driver =new ChromeDriver();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+		driver.manage().window().maximize();
+		driver.navigate().to("https://www.google.com/");
+		driver.findElement(By.cssSelector("[id='APjFqb']")).sendKeys("automation");
+		driver.navigate().to("https://www.Amazon.in/");
+		Thread.sleep(2000);
+		System.out.println(driver.getTitle()); 
+		driver.findElement(By.cssSelector("[id='twotabsearchtextbox']")).sendKeys("tools");
+		driver.navigate().refresh();
+		driver.navigate().back();
+		System.out.println(driver.getTitle()); 
+		
+		
+
+	}
+
+}
