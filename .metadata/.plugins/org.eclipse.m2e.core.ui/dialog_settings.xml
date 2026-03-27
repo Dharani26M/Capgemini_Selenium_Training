@@ -2,6 +2,13 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\Users\itsdh\Capgemini_Selenium_Training\SeleniumUIFramework.OrangeHRM"/>
+			<item value="C:\Users\itsdh\Capgemini_Selenium_Training\SeleniumUIFramework.OrangeHRM\src\test\java\com\orangehrm\seleniumuiframework\pim\MyInfoTest.java"/>
+			<item value="C:\Users\itsdh\Capgemini_Selenium_Training\selenium_TestNG\src\test\java\selenium_TestNG_Pratice\TestNGpratice.java"/>
+			<item value="C:\Users\itsdh\Capgemini_Selenium_Training\selenium_Test_codes\src\test\java\selenium_test_codes_daily\Action_Methods.java"/>
+			<item value="C:\Users\itsdh\Capgemini_Selenium_Training\selenium_handling_synchronization\src\test\java\selenium_explicit_wait\ExplicitWait_In_DemoSite.java"/>
+			<item value="C:\Users\itsdh\Capgemini_Selenium_Training\selenium_Test_codes\src\test\java\selenium_test_codes_daily\Test_Daily_Codes_03.java"/>
+			<item value="C:\Users\itsdh\Capgemini_Selenium_Training\selenium_popups\src\test\java\selenium_fileupload_popups\FileUpload_PopUps_TestCase_01.java"/>
 			<item value="C:\Users\itsdh\capg\selenium_select_class\src\test\java\selenium_select_methods\Select_TestCase_01.java"/>
 			<item value="C:\Users\itsdh\capg\selenium_Interrogation_API\src\test\java\selenium_webelement_interrogation_method\WebElement_GetSize.java"/>
 			<item value="C:\Users\itsdh\capg\selenium_navigation_API\src\test\java\selenium_navigation_API_execution\NavigateUsingMethods.java"/>
@@ -50,11 +57,20 @@
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
 			<item value="com.capgemini.selenium.training"/>
+			<item value="com.capgemini.seleniumUIFramework"/>
 			<item value="com.Capgemini.Training"/>
 		</list>
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="SeleniumGrid"/>
+			<item value="SeleniumParametrization"/>
+			<item value="selenium.pom"/>
+			<item value="SeleniumUIFramework.OrangeHRM"/>
+			<item value="selenium_TestNG"/>
+			<item value="selenium_javascriptExecutor"/>
+			<item value="selenium_handling_synchronization"/>
+			<item value="selenium_Test_codes"/>
 			<item value="selenium_popups"/>
 			<item value="selenium_select_class"/>
 			<item value="selenium_Interrogation_API"/>
@@ -62,8 +78,6 @@
 			<item value="selenium_navigation_API"/>
 			<item value="selenium_webdriver"/>
 			<item value="selenium_relative_locators"/>
-			<item value="selenium_locators"/>
-			<item value="selenium_Training"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>

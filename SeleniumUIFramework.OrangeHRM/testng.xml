@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Suite" thread-count="6">
+	<test name="BuzzTest">
+		<parameter name="broswer" value="Chrome"></parameter>
+		<classes>
+			<class name="com.orangehrm.seleniumuiframework.buzz.BuzzTest" />
+		</classes>
+	</test>
+	<test name="RequirementLinkTest">
+		<parameter name="broswer" value="Edge"></parameter>
+		<classes>
+			<class
+				name="com.orangehrm.seleniumuiframework.requirement.RequirementLinkTest" />
+		</classes>
+	</test>
+	<test name="RequirementTest">
+		<parameter name="broswer" value="Firefox"></parameter>
+		<classes>
+			<class
+				name="com.orangehrm.seleniumuiframework.requirement.RequirementTest" />
+		</classes>
+	</test>
+	<test name="PimLinkTest">
+		<parameter name="broswer" value="Chrome"></parameter>
+		<classes>
+			<class name="com.orangehrm.seleniumuiframework.pim.PimLinkTest" />
+		</classes>
+	</test>
+	<test name="MyInfoTest">
+		<parameter name="broswer" value="Edge"></parameter>
+		<classes>
+			<class name="com.orangehrm.seleniumuiframework.pim.MyInfoTest" />
+		</classes>
+	</test>
+	<test name="fPimTest">
+		<parameter name="broswer" value="Firefox"></parameter>
+		<classes>
+			<class name="com.orangehrm.seleniumuiframework.pim.PimTest" />
+		</classes>
+	</test>
+	<!-- Test -->
+</suite> <!--
+Suite -->

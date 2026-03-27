@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="4" parallel="classes" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="4" parallel="classes" name="Test(failed)">
+    <classes>
+      <class name="com.orangehrm.seleniumuiframework.pimtest.RequirementLinkCandidates">
+        <methods>
+          <include name="aftertest"/>
+          <include name="aftersuite"/>
+          <include name="beforetest"/>
+          <include name="RequirementTest"/>
+          <include name="beforeclass"/>
+          <include name="beforemethod"/>
+          <include name="beforesuite"/>
+          <include name="afterclass"/>
+          <include name="aftermethod"/>
+        </methods>
+      </class> <!-- com.orangehrm.seleniumuiframework.pimtest.RequirementLinkCandidates -->
+      <class name="com.orangehrm.seleniumuiframework.pimtest.AddToEmployeeTest">
+        <methods>
+          <include name="aftertest"/>
+          <include name="add"/>
+          <include name="aftersuite"/>
+          <include name="beforetest"/>
+          <include name="beforeclass"/>
+          <include name="beforesuite"/>
+          <include name="beforemethod"/>
+          <include name="afterclass"/>
+          <include name="aftermethod"/>
+        </methods>
+      </class> <!-- com.orangehrm.seleniumuiframework.pimtest.AddToEmployeeTest -->
+      <class name="com.orangehrm.seleniumuiframework.pimtest.RequirementTest">
+        <methods>
+          <include name="aftertest"/>
+          <include name="beforetest"/>
+          <include name="aftersuite"/>
+          <include name="Requirement"/>
+          <include name="beforeclass"/>
+          <include name="beforemethod"/>
+          <include name="beforesuite"/>
+          <include name="afterclass"/>
+          <include name="aftermethod"/>
+        </methods>
+      </class> <!-- com.orangehrm.seleniumuiframework.pimtest.RequirementTest -->
+      <class name="com.orangehrm.seleniumuiframework.pimtest.TerminationTest">
+        <methods>
+          <include name="aftertest"/>
+          <include name="beforetest"/>
+          <include name="aftersuite"/>
+          <include name="beforeclass"/>
+          <include name="AddTerminationReason"/>
+          <include name="beforesuite"/>
+          <include name="beforemethod"/>
+          <include name="aftermethod"/>
+          <include name="afterclass"/>
+        </methods>
+      </class> <!-- com.orangehrm.seleniumuiframework.pimtest.TerminationTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

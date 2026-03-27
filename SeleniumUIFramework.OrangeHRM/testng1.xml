@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="4" parallel="tests" name="OrangeHRM Suite">
+
+  <test name="AddEmployeeTest">
+    <classes>
+      <class name="com.orangehrm.seleniumuiframework.pimtest.AddToEmployeeTest"/>
+    </classes>
+  </test>
+
+  <test name="RequirementLinkTest">
+    <classes>
+      <class name="com.orangehrm.seleniumuiframework.pimtest.RequirementLinkCandidates"/>
+    </classes>
+  </test>
+
+  <test name="TerminationTest">
+    <classes>
+      <class name="com.orangehrm.seleniumuiframework.pimtest.TerminationTest"/>
+    </classes>
+  </test>
+
+  <test name="RequirementTest">
+    <classes>
+      <class name="com.orangehrm.seleniumuiframework.pimtest.RequirementTest"/>
+    </classes>
+  </test>
+
+</suite>
